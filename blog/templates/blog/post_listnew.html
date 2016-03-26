@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="https://djangogirls.org/"><strong><font color="orange">What is Django Girls</font></strong></a></h1>
+            <ul>
+            	<li> non-profit organization and a community that empowers and helps women to organize free, one-day programming workshops by providing tools, resources and support.</li>
+            	<li>a volunteer run organization with hundreds of people contributing to bring more amazing women into the world of technology.</li>
+            	<li>making technology more approachable by creating simpler tools and resources designed with empathy</li>
+            	<li>During each event, 30-60 women build their first web application using HTML, CSS, Python and Django.</li>
+            	</ul>
+        </div>
+
+    {% for post in posts %}
+
+    <div>
+       <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>  
+
+
+    {% endfor %}
+
+    </body>
+</html>
