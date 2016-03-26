@@ -16,13 +16,16 @@
     {% for post in posts %}
 
     <div>
-       <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+       <p><strong><em>published: {{ post.published_date }}</strong></em></p>
+       <h2><a href="http://tutorial.djangogirls.org/en/django/index.html"><strong><font color="orange">{{ post.title }}</font></strong></a></h2>
         <p>{{ post.text|linebreaks }}</p>
+
     </div>  
 
 
     {% endfor %}
+
+     <img src="https://raw.githubusercontent.com/olasitarska/djangogirls/gh-pages/resources/graphics/logo_square.png"> 
 
     </body>
 </html>
